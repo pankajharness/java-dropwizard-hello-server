@@ -1,0 +1,9 @@
+java_binary(
+    name = "hello_world_server",
+    srcs = glob(["src/main/java/com/example/*.java"]),
+    main_class = "com.example.HelloWorldApplication",
+    deps = [
+        "@maven//:io_dropwizard_dropwizard_core",
+        "@maven//:javax_servlet_javax_servlet_api",
+    ],
+)
